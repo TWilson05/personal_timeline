@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f257be5bd4e3eca23dfd4a2435044af3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f257be5bd4e3eca23dfd4a2435044af3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f257be5bd4e3eca23dfd4a2435044af3 = L.map(
+                "map_f257be5bd4e3eca23dfd4a2435044af3",
+                {
+                    center: [49.2827, -123.1207],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79018783ed9363c285442a59ab9dbaba = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_79018783ed9363c285442a59ab9dbaba.addTo(map_f257be5bd4e3eca23dfd4a2435044af3);
+        
+    
+            var feature_group_9ce64987c8fa7a2344d5361311fb9a61 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_9ce64987c8fa7a2344d5361311fb9a61.addTo(map_f257be5bd4e3eca23dfd4a2435044af3);
+        
+    
+            var feature_group_81abfa42aad3e321589d088933faddae = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_81abfa42aad3e321589d088933faddae.addTo(map_f257be5bd4e3eca23dfd4a2435044af3);
+        
+    
+            var feature_group_f8517df07e9324494700c919426c583a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_155ce90de46b3eeae6540b5d96938824 = L.marker(
+                [55.940470146015286, -3.1720004975795746],
+                {
+}
+            ).addTo(feature_group_f8517df07e9324494700c919426c583a);
+        
+    
+            var icon_1c4358650cec42ebea95a98ab5c74bb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bde533b7b1e0797bec1aee67622a4c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7b0be651a9a3ca1cca95eea2c674ed4 = $(`<div id="html_f7b0be651a9a3ca1cca95eea2c674ed4" style="width: 100.0%; height: 100.0%;"><b>Walk to the Beach</b><br>2023-09-20T12:46:39+00:00</div>`)[0];
+                popup_6bde533b7b1e0797bec1aee67622a4c7.setContent(html_f7b0be651a9a3ca1cca95eea2c674ed4);
+            
+        
+
+        marker_155ce90de46b3eeae6540b5d96938824.bindPopup(popup_6bde533b7b1e0797bec1aee67622a4c7)
+        ;
+
+        
+    
+    
+                marker_155ce90de46b3eeae6540b5d96938824.setIcon(icon_1c4358650cec42ebea95a98ab5c74bb6);
+            
+    
+            var poly_line_ec476fc3bb872d27388f8a192be05e02 = L.polyline(
+                [[55.94047, -3.172], [55.940607, -3.172578], [55.941545, -3.171443], [55.939997, -3.167071], [55.939584, -3.161511], [55.940061, -3.157957], [55.941078, -3.154749], [55.940785, -3.152726], [55.941703, -3.151349], [55.942777, -3.145952], [55.942323, -3.144947], [55.946844, -3.131504], [55.948527, -3.121584], [55.954859, -3.110719], [55.954119, -3.108761], [55.953766, -3.109318], [55.954126, -3.110427], [55.952389, -3.112646], [55.952804, -3.114285], [55.948461, -3.121586], [55.946774, -3.131582], [55.942259, -3.144847], [55.9427, -3.14606], [55.941628, -3.151231], [55.940715, -3.15281], [55.941026, -3.154736], [55.939503, -3.161661], [55.939993, -3.167188], [55.941495, -3.171483], [55.940663, -3.172501], [55.940448, -3.172179]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_f8517df07e9324494700c919426c583a);
+        
+    
+            feature_group_f8517df07e9324494700c919426c583a.addTo(map_f257be5bd4e3eca23dfd4a2435044af3);
+        
+    
+            var feature_group_0c40dc08b8e2b97a04523b8e93dab8cc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_0c40dc08b8e2b97a04523b8e93dab8cc.addTo(map_f257be5bd4e3eca23dfd4a2435044af3);
+        
+    
+            var layer_control_a88fd6dcf88030c52156014e296e8008_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_79018783ed9363c285442a59ab9dbaba,
+                },
+                overlays :  {
+                    "Photos" : feature_group_9ce64987c8fa7a2344d5361311fb9a61,
+                    "Notes/Places" : feature_group_81abfa42aad3e321589d088933faddae,
+                    "Routes (GPX)" : feature_group_f8517df07e9324494700c919426c583a,
+                    "Connectors (dotted)" : feature_group_0c40dc08b8e2b97a04523b8e93dab8cc,
+                },
+            };
+            let layer_control_a88fd6dcf88030c52156014e296e8008 = L.control.layers(
+                layer_control_a88fd6dcf88030c52156014e296e8008_layers.base_layers,
+                layer_control_a88fd6dcf88030c52156014e296e8008_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_f257be5bd4e3eca23dfd4a2435044af3);
+
+        
+</script>
+</html>
