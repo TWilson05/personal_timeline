@@ -46,3 +46,4 @@ def upsert_events(conn: sqlite3.Connection, rows: Iterable[Tuple]):
     )
     conn.executemany(sql, rows)
     conn.commit()
+    
