@@ -1,0 +1,24 @@
+# Edit paths if you move folders
+paths:
+  photos_dir: data/photos
+  strava_gpx_dir: data/strava_gpx
+  notes_csv: data/notes.csv
+  db_path: data/timeline.db
+  dashboard_dir: data/dashboard
+
+strava:
+  # If true, etl_strava will try to fetch new activities via API
+  enabled: true
+  # How many most-recent activities to fetch on each run
+  fetch_limit: 200
+
+map:
+  # Default map center (used if no data yet)
+  center_lat: 49.2827
+  center_lon: -123.1207
+  zoom_start: 11
+  # Connector appearance
+  connector_dash: "5, 10"   # dotted line pattern
+  connector_weight: 2
+  # GPX line weight
+  route_weight: 4
