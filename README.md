@@ -1,4 +1,3 @@
-```md
 # Personal Timeline + Map (Free, Local‑First)
 
 A lightweight, free, local-first "Day One" alternative built with Python. It auto-aggregates:
